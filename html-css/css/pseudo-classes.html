@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo-Classes</title>
+    <style>
+        a{
+            font-size: 16px;
+        }
+        /* property when not clicked yet */
+        a:link {
+            color: red
+        }
+        /* property when mouse hover */
+        a:hover {
+            color: black
+        }
+        /* property when mouse click */
+        a:active {
+            color:darkred
+        }
+        /* property when visited */
+        /* overrides other property like active/hover */
+        a:visited {
+            color:purple
+        }
+
+        li:hover {
+            background-color: red;
+        }
+        /* property when not hovered */
+        li:not(:hover) {
+            background-color: yellow;
+            display: none;
+        }
+        /* property applies depending on n increment */
+        /* can be 3, "even", "odd", or "3n", or formula */
+        li:nth-child(3n-1) {
+            font-size: 32px;
+        }
+        /* pseudo-classes can modify other element*/
+        /* hovering on ul will apply property on its child class "li" */
+        /* li only works if it is under ul */
+        ul:hover li {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- psuedo-classes modify behavior of element when in certain state -->
+    <a href="https://www.netflix.com/ph-en/title/80057281">Watch Stranger Things</a>
+    <ul>
+        <h2>Stranger Things Character</h1>
+        <li>Eleven</li>
+        <li>Joyce</li>
+        <li>Hopper</li>
+        <li>Max</li>
+        <li>Billy</li>
+        <li>Steve</li>
+        <li>Erica</li>
+        <li>Robin</li>
+        <li>Nancy</li>
+    </ul>
+</body>
+</html>

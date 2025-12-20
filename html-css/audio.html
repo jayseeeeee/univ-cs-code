@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <p>Running Up That Hill</p>
+    <!-- 
+    create song from link and can also be local audio files (mp3, wav, ogg)
+    'controls' means the audio player will have controls
+    'autoplay' means the audio will play automatically
+    'muted' means the audio will play without sound
+    'loop' means the audio will play in a loop
+    -->
+    <audio controls autoplay muted loop>
+        <!-- type sets backup when other audio type fails/unsupported -->
+        <source src="https://ia801302.us.archive.org/24/items/KateBushrunningupthathill/Kate_Bush__Running_Up_That_Hill__12___.mp3" type="audio/mpeg">
+        <source src="https://ia801302.us.archive.org/24/items/KateBushrunningupthathill/Kate_Bush__Running_Up_That_Hill__12___.mp3" type="audio/wav">
+    </audio>
+
+    <br>
+
+    <!-- 
+    source can be set directly to audio 
+    removing controls makes it hidden but can still play
+    -->
+    <audio src="https://ia801302.us.archive.org/24/items/KateBushrunningupthathill/Kate_Bush__Running_Up_That_Hill__12___.mp3"></audio>
+</body>
+</html>

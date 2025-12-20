@@ -1,0 +1,32 @@
+body {
+    font-family: Trebuchet MS;
+}
+h1 {
+    text-shadow: 1px 1px 2px white ;
+}
+
+/* use '#' for id */
+#p1 {
+    color: lightcoral;
+}
+
+#p2 {
+    color: lightsalmon
+}
+
+#p3 {
+    color: lightyellow
+}
+
+#p4 {
+    color: lightgreen;
+}
+
+/* use '.' for class */
+.odd {
+    font-style: italic;
+}
+
+.even {
+    font-weight: 1000;
+}

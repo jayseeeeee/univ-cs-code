@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins</title>
+    <!-- margins is space around an element -->
+    <style>
+        body {
+            margin: 0px;
+        }
+        div {
+            border: 5px solid;
+            height: 250px;
+            width: 250px;
+            font-size: 5em;
+            text-align: center;
+            align-content: center;
+
+            /* apply margin to every side */
+            margin: 50px;
+        }
+        #box1 {
+            /* automatically add margin to left (push to farthest right) */
+            margin-left: auto;
+            background-color: red;
+        }
+        #box2 {
+            /* automatically add margin to left and right (push to center) */
+            margin: auto;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">Box 1</div>
+    <div id="box2">Box 2</div>
+</body>
+</html>

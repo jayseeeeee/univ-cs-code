@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <!-- button introduction -->
+    <!-- inline css with style -->
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <button style="font-size: 25px; background-color: lightblue; color: black; border-radius: 5px;"> Click Me </button> 
+    </a>
+
+    <br> <br>
+
+    <!-- javascript introduction -->
+    <!-- connect button to 'function' with 'onclick' -->
+    <button onclick="myFunction()" style="font-size: 25px; background-color: lightblue; color: black; border-radius: 5px;"> Click Me </button> 
+        <p id="greeting">Hello</p>
+
+    <!-- javascript function using script<> -->
+    <script>
+        function myFunction() {
+            document.getElementById("greeting").innerHTML = "Goodbye!";    
+        }
+    </script>
+</body>
+</html>

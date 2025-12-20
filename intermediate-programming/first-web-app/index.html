@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web App</title>
+    <link rel="stylesheet" href="css/form-template.css">
+</head>
+<body style="background-image: url('assets/login-page-bg.png');">
+
+    <!-- login logo -->
+    <img src="assets/login-page-logo.png" height="400" alt="This is a picture of the login page logo">
+    
+    <!-- login form -->
+    <form style="background: linear-gradient(to left, #f79630 42%, #f0f0f0 42%);" action="home.html">
+        
+        <!-- splits into two column -->
+        <div style="gap: 75px;" class="flex-container">
+
+            <!-- first column -->
+            <div style="text-align: center;" class="short-column">
+                <!-- title -->  
+                <h1 style="margin-top: 50px;">Sign In Account</h1>
+                
+                <!-- title description -->
+                <p style="margin-bottom: 15px; color: gray ">Login your account information to get started!</p>
+
+                <!-- username -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" required> <br>
+
+                <!-- password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your credential" required> <br>
+                
+                <!-- forgot your password -->
+                <a href=""><p style="margin-top: 15px; color: black; font-size: 11px;">Forgot your password?</p></a>
+                <!-- login button -->
+                <button style="margin-bottom: 50px" class="button" type="submit">Login</button>
+            </div>
+            
+            <!-- second column -->
+            <div style="text-align: center;">
+
+                <!-- title description -->
+                <h1 style="color: white; font-size: 42px;">Web Journey</h1> <br>
+
+                <!-- title description -->
+                <p style="color: white;">To get you started, please</p>
+                <p style="color: white;">create an account</p>
+
+                <!-- create account button -->
+                <a href="register.html"> <button style="margin-top: 15px; outline: 2px solid" class="button" type="button">Create Account</button> </a>
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>

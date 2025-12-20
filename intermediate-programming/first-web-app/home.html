@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        html::-webkit-scrollbar {
+            display: none;
+        }
+        header {
+            font-family: 'League Spartan';
+            font-weight: 600;
+            margin: 0;
+            padding: 5px;
+            padding-inline: 25px;
+            box-shadow: 0 1px 2px gray;
+        }
+        a {
+            color: black;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        a:hover {
+            color: gray;
+        }
+        p, h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        h1 {
+            font-family: 'League Spartan';
+            font-size: 50px;
+        }
+        h2 {
+            font-family: 'Poppins';
+            font-weight: 150;
+            font-size: 32px;
+        }
+        h3 {
+            font-family: 'Open Sans';
+            font-size: 18px;
+        }
+        p {
+            font-family: 'Open Sans';
+            font-weight: 300;
+        }
+        .row-list-container h3 {
+            font-size: 64px;
+            color:#2385c4;
+        }
+        .masarap-at-masikip-na-background-box {
+            margin: 0px; width: 800px; padding: 20px; position: relative; bottom: 25px; text-align: justify; 
+            background-color: white; 
+            border-radius: 20px;
+        }
+        .info-container {
+            margin-top: 100px;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            width: 80%;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0px 1px 5px gray;
+            background-color: white;
+            background-repeat: no-repeat;
+        }
+        .info-container div {
+            text-align: center;
+        }
+        .info-container img {
+            height: 250px;
+        }
+        .info-container h2 {
+            color: black; 
+            font-family: 'Exo 2';
+            font-weight: 1000; 
+            font-size: 24px;
+        }
+        .info-container p {
+            font-size: 18px;
+        }
+        .long-paragraph, .info-container p {
+            padding: 20px; 
+            text-align: justify; 
+            color: black; 
+        }
+    </style>
+</head>
+<body>
+    <!-- header page -->
+    <header>
+        <div style="display: flex; align-items: center;">
+            <h3 style="color: black; font-family: 'Exo 2';">⚱️JAYSEEEEE'S DEADLY CRAMMING</h3>
+            <div style="display: flex; gap: 50px; align-items: center; margin-left: auto">
+                <a href="">HTML <span style="font-size: 18px; text-align: center;"> ⮟</span></a>
+                <a href="">CSS <span style="font-size: 18px; text-align: center;"> ⮟</a>
+                <a href="">JavaScript <span style="font-size: 18px; text-align: center;"> ⮟</a>
+                <a style="color: white; background-color: #f79630; padding: 10px; border-radius: 15px;" href="">About Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main body -->    
+    <main>
+        <div style="
+            background-color: #2385c4; 
+            background-image: url(assets/bg-1.png); 
+            background-size: 50%; 
+            background-position: 50px -30px;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 25px;">
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 20px; padding: 30px;">
+                <div style="text-align: center;">
+                    <h1>Welcome To My</h1>
+                    <h1 style="font-size: 100px; color:#f79630; text-shadow: 2px 5px 5px grey;">
+                        Web Journey!</h1>
+                    <hr style="width: 30%; height: 5px; background-color: white; border: none;">
+                    <h2>Introduction to Web Development</h2>
+                </div>
+                
+                <img style="position: relative; bottom: 50px;" src="assets/web-dev.gif" height="500px" alt="This is an animated gif">
+            </div>
+            
+
+            <p class="long-paragraph" style="background-color: white; border-radius: 20px; width: 800px; position: relative; bottom: 25px; ">
+                <b>Web Development</b> is the process of creating and maintaining websites and web applications that are accessible on the internet. 
+                It involves a combination of programming, design, and content management to build functional and visually appealing digital experiences. 
+                Web development can range from creating simple static pages to complex dynamic applications that serve millions of users.
+            </p>        
+        </div>
+
+        <div style="
+        background-color: #f79630; 
+        background-image: url(assets/bg-2.png); 
+        background-size: 80%; 
+        background-position: center 5px;
+        background-repeat: no-repeat;
+        height: 100vh; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;">
+            <!-- maliit lang sha beh -->
+            <h3 style="font-size: 36px; font-weight: 50;">WHAT IS USED FOR</h3>
+            <!-- web development title na malaki -->
+            <h1 style="font-family: 'Exo 2'; font-size: 80px; position: relative; bottom: 30px; text-shadow: 0px 1px 10px gray;">WEB DEVELOPMENT</h1>
+            
+            <!-- malaking agwat -->
+            <div style="margin-top: 100px; background-color: white; padding: 20px 75px; border-radius: 20px; text-align: center;">
+                <!-- to develop websites kemerut -->
+                <p style="font-size: 16px; position: relative; top: 15px; color:black"> To develop websites and web applications, three core technologies are primarily used: </p>
+                <!-- html | css | java -->
+                <div class="row-list-container" style=" display: flex; position: relative; bottom: 5px; padding-right: 50px; gap: 100px; ;">
+                    <h3>HTML</h3><h3>|</h3><h3>CSS</h3><h3>|</h3><h3>JS</h3>
+                </div>    
+            </div>
+        </div>
+
+        <!-- information n sha about don s mga html kemerut -->
+        <div style="background-color: #2385c4; display: flex; flex-direction: column; align-items: center; padding: 20px;">
+            
+            <!-- html toh -->
+            <div class="info-container" style="background-image: url(assets/bg-3.png); background-size: 110%; background-position: 200px center; ">
+                <div>
+                    <!-- may sariling mundo tong html bwiset d aq makahanap ng parehas img sa cs at java :( -->
+                    <img src="assets/html.png" style="position: relative; left: -35px; right: -35px;" alt="This is a picture of the HTML logo">
+                    <h2 style="padding-right: 75px;">HYPERTEXT MARKUP LANGUAGE</h2>
+                </div>
+                <p class="long-paragraph">
+                    HTML is the standard markup language used to create the structure and content of web pages. 
+                    It provides the foundation for web development by defining elements such as headings, paragraphs, images, links, and forms. 
+                    HTML uses a system of tags and attributes to describe the content and its organization. 
+                    By marking up text with HTML, developers can create well-structured documents that browsers can interpret and render. 
+                </p>
+            </div>
+
+            <!-- css naman toh -->
+            <div class="info-container" style="background-image: url(assets/bg-4.png); background-size: 140%; background-position: -100px -70px; ">
+                <div>
+                    <img src="assets/css.png" height="250px" alt="This is a picture of the CSS logo">
+                    <h2>CASCADING STYLE SHEETS</h2>
+                </div>
+                <p style="margin-left: 70px;">
+                    CSS is a style sheet language used to control the appearance and layout of HTML content.
+                    It allows developers to apply styles to web pages, such as colors, fonts, spacing, and positioning. 
+                    CSS separates the presentation layer from the structural layer, enabling more flexibility and maintainability in web design. 
+                    By using CSS, developers can create responsive and visually appealing web pages that adapt to different devices and screen sizes.
+                </p>
+            </div>
+            
+            <!-- tapos javascript toh ok??? -->
+            <div class="info-container" style="background-image: url(assets/bg-5.png); background-size: 130%; background-position: -150px -65px; ">
+                <div>
+                    <img src="assets/js.png" height="250px" alt="This is a picture of the JavaScript logo">
+                    <h2>JAVASCRIPT</h2>    
+                </div>
+                <p style="margin-left: 70px;">
+                    JavaScript is a dynamic programming language that enables interactivity and functionality in web pages. 
+                    It allows developers to create engaging user experiences by adding features such as animations, form validation, and dynamic content updates. 
+                    JavaScript can be used for both client-side and server-side development, making it a versatile tool for building web applications. 
+                    With the advent of frameworks and libraries like React, Angular, and Node.js, JavaScript has become an essential part of modern web development.
+                </p>
+            </div>        
+            <p class="info-container" style="background-color: #f79630; margin: 100px 300px; padding: 15px; border-radius: 15px; font-weight: 500; text-align: center; font-family: 'Poppins';">These three technologies—HTML, CSS, and JavaScript—form the backbone of web development, working together to create interactive, user-friendly, and aesthetically pleasing websites and applications.</p>
+        </div>
+    </main>
+    <footer style="font-weight: 500; background-color: #ed7900; padding: 15px; text-align: center; font-family: 'League Spartan'; color: white; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 50px;">
+        
+        JOHN CHRISTIAN DACASIN
+        &copy; 2025 FIRST WEB APP </p>
+
+        <!-- contact me -->
+        <a style="outline: 2px solid; width: 15%; color: white; border-radius: 15px; padding: 10px;" href="">CONTACT ME</a>
+
+    </footer>
+</body>
+</html>

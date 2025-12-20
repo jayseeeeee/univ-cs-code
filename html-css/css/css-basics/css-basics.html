@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+
+    <!-- this is an external css and can be reused-->
+    <link rel="stylesheet" href="external-stylesheet.css">
+
+    <!-- this is an internal css -->
+    <style>
+        body {
+            background-color: black;
+        }
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center;"">
+    <!-- inline, internal, external -->
+
+    <!-- this is an inline css -->
+     <div style="background-color: white; width: 50px">
+        <h1 style="color: cadetblue;" >This is my website</h1>
+     </div>
+    <p id="p1" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste minus id quis vero sint ex fugiat voluptatum eaque eos consectetur, blanditiis suscipit optio. Iste voluptates totam esse qui commodi.</p>
+    <p id="p2" class="even">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste minus id quis vero sint ex fugiat voluptatum eaque eos consectetur, blanditiis suscipit optio. Iste voluptates totam esse qui commodi.</p>
+    <p id="p3" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste minus id quis vero sint ex fugiat voluptatum eaque eos consectetur, blanditiis suscipit optio. Iste voluptates totam esse qui commodi.</p>
+    <p id="p4" class="even">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste minus id quis vero sint ex fugiat voluptatum eaque eos consectetur, blanditiis suscipit optio. Iste voluptates totam esse qui commodi.</p>
+</body>
+</html>

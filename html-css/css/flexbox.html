@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        /* flex direction */
+        
+        /* default */
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .container2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .container3 {
+            display: flex;
+            flex-direction: column;
+        }
+        .container4 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        /* justify content */
+
+        /* default*/
+        .container5 {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .container6 {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .container7 {
+            display: flex;
+            justify-content: center;
+        }
+        .container8 {
+            display: flex;
+            justify-content: space-between;
+        }
+        /* half space for start & end */
+        .container9 {
+            display: flex;
+            justify-content: space-around;
+        }
+        /* equal spaces */
+        .container10 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        /* align items (for y-axis) */
+
+        /* default */
+        .container11 {
+            display: flex;
+            align-items: flex-start;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container12 {
+            display: flex;
+            align-items: flex-end;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container13 {
+            display: flex;
+            align-items: center;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        /* text will be aligned */
+        .container14 {
+            display: flex;
+            align-items: baseline;
+            border: 10px solid black;
+            height: 90vh;
+        }
+
+        /* flex wrap */
+
+        /* default */
+        .container15 {
+            display: flex;
+            flex-wrap: nowrap;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container16 {
+            display: flex;
+            flex-wrap: wrap;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container17 {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            border: 10px solid black;
+            height: 90vh;
+        }
+
+        /* align content (used along with flex wrap*/
+        .container18 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container19 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container20 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container21 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container22 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container23 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+            border: 10px solid black;
+            height: 90vh;
+        }
+    
+        /* row and column gap */
+        .container24 {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            column-gap: 2em;
+            row-gap: 2em;
+            border: 10px solid black;
+            height: 90vh;
+        }
+
+        /* align-self */
+        .container25 {
+            display: flex;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        /* default */
+        .container25 #box1 {
+            align-self: start;
+        }
+        .container25 #box2 {
+            align-self: center;
+        }
+        .container25 #box3 {
+            align-self: end;
+        }
+
+        /* order */
+        .container26 {
+            display: flex;
+            border: 10px solid black;
+            height: 90vh;
+        }
+        .container26 #box1 {
+            order: 1
+        }
+        .container26 #box3 {
+            order: -1
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .box {
+            border-radius: 0.2em;
+            font-size: 4em;
+            height: 1.2em;
+            text-align: center;
+            width: 1.2em;
+        }
+        #box1 {
+            background-color: rgb(255, 122, 122);
+        }
+        #box2 {
+            background-color: rgb(255, 255, 128);
+        }
+        
+        #box3 {
+            background-color: rgb(157, 255, 157);
+        }
+        #box4 {
+            background-color: rgb(144, 144, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Direction</h1>
+
+    <h2>Row</h2>
+    <div class="container">
+        <div class="box" id="box1"box1>1</div>        
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h2>Row Reversed</h2>
+    <div class="container2">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Column</h2>
+    <div class="container3">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Column Reversed</h2>
+    <div class="container4">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h1>Justify Content</h1>
+
+    <h2>Flex Start</h2>
+    <div class="container5">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Flex End</h2>
+    <div class="container6">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Center</h2>
+    <div class="container7">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Space Between</h2>
+    <div class="container8">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Space Around</h2>
+    <div class="container9">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Space Evenly</h2>
+    <div class="container10">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h1>Align Items</h1>
+
+    <h2>Flex Start</h2>
+    <div class="container11">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Flex End</h2>
+    <div class="container12">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Center</h2>
+    <div class="container13">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+    <h2>Baseline</h2>
+    <div class="container14">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h1>Flex Wrap</h1>
+
+    <h2>No Wrap</h2>
+    <div class="container15">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h2>Wrap</h2>
+    <div class="container16">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h2>Wrap Reverse</h2>
+    <div class="container17">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h1>Align Content</h1>
+
+    <h2>Flex Start</h2>
+    <div class="container18">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h2>Flex End</h2>
+    <div class="container19">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h2>Center</h2>
+    <div class="container20">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h2>Space Between</h2>
+    <div class="container21">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h2>Space Around</h2>
+    <div class="container22">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h2>Space Evenly</h2>
+    <div class="container23">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h1>Row & Column Gap</h1>
+
+    <div class="container24">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h1>Align Self</h1>
+    <div class="container25">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+
+    <h1>Order</h1>
+    <div class="container26">
+        <div class="box" id="box1"box1>1</div>
+        <div class="box" id="box2"box2>2</div>
+        <div class="box" id="box3"box3>3</div>
+        <div class="box" id="box4"box4>4</div>
+    </div>
+    
+</body>
+</html>

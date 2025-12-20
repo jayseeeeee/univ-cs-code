@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown button {
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        .dropdown a {
+            font-weight: 10;
+            display: block;
+            color: red;
+            text-decoration: none;
+            padding: 10px 10px;
+        }
+        /* property when dropdown item is hovered */
+        .dropdown a:hover {
+            background-color: red;
+            color: white;
+        }
+        /* property for dropdown items */
+        .dropdown .content {
+            /* invisible first */
+            display: none;
+            position: absolute;
+            min-width: 150px;
+            box-shadow: 1px 1px 3px rgba(125, 125, 125);
+        }
+        /* set property of dropdown items when button is hovered */
+        .dropdown:hover .content {
+            /* make it appear */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button>Characters</button>
+        <div class="content">
+            <a href="#">Eleven</a>
+            <a href="#">Max</a>
+            <a href="#">Mike</a>
+            <a href="#">Lucas</a>
+            <a href="#">Dustin</a>
+        </div>
+    </div>
+</body>
+</html>

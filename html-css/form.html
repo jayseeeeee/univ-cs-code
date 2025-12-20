@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- 'action' is the url where the form data will be sent
+    'method' is the http method (get or post) used to send the form data
+    'post' is for confidential data
+    'get' is for insensitive data
+    'enctype' is the encoding type of the form data (file uploads) -->
+    <form action="index.php" method="post", enctype="multipart/form-data">
+
+        <!-- label should be combined with input
+        'for' can be read by screen reader/visually impaired
+        'for' label connects to 'id' input where clicking label moves user to textbox -->
+        <label for="username">Username:</label>
+        <!-- text input
+        'required' forces input
+        'placeholder' gives hint to user
+        'minlength' forces minimum length
+        'maxlength' forces maximum length -->
+        <input type="text" id="username" placeholder="Please enter username" minlength="6" maxlength="15">
+        
+        <br>
+
+        <!-- password input -->
+        <label for="password">Password:</label>
+        <!-- hides entered password input -->
+        <input type="password" id="password" placeholder="Enter secure password" minlength="6" maxlength="15">
+
+        <br>
+
+        <!-- email input -->
+        <label for="email">Email:</label>
+        <!-- forces input to have @ or valid email format -->
+        <input type="email" id="email" placeholder="your@email.com">
+
+        <br>
+
+        <!-- tel input -->
+        <label for="phone">Phone:</label>
+        <!-- tel input is similar to text but brings keypad for mobile
+        'pattern' limits format 
+        [0-9]/[a-z]/[A-Z]/[a-zA-Z]/[abc]: must match through or with the selected characters
+        {n}/{n,m}: the length of the text -->
+        <input type="tel" id="phone" placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+
+        <br>
+
+        <!-- date input -->
+        <label for="bday">Birth Date:</label>
+        <!-- forces input to have date format -->
+        <input type="date" id="bday">
+
+        <br>
+
+        <!-- number input -->
+        <label for="quantity">Quantity:</label>
+        <!-- forces input to have number format
+        'min' forces minimum number
+        'max' forces maximum number -->
+        <input type="number" id="quantity" min="-5" max="10" value="9" placeholder="1">
+
+        <br>
+
+        <!-- range input -->
+        <label for="range">Sex:</label>
+        <!-- 'value' is the data to send when submit
+        'name' groups radio elements so only one can be selected -->
+        <label for="male">Male</label>
+        <input type="radio" id="male" value="male" name="sex">
+        <label for="female">Female</label>
+        <input type="radio" id="female" value="female" name="sex">
+
+        <br>
+
+        <!-- select & options -->
+        <label for="payment">Payment</label>
+        <!-- options can be created from select tags -->
+        <select>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="paypal">Paypal</option>
+        </select>
+
+        <br>
+
+        <!-- checkbox input -->
+        <label for="terms">Terms and Conditions</label>
+        <!-- 'checked' makes checkbox selected by default -->
+        <input type="checkbox" id="terms"> <br>
+
+        <!-- textarea -->
+        <label for="suggestion"></label>
+        <!-- 'rows' is the number of rows to display
+        'cols' is the number of columns to display -->
+        <textarea id="suggestion" rows="4" cols="50" placeholder="Please enter your suggestion"></textarea> <br>
+
+        <!-- file input -->
+        <label for="file">Upload File</label>
+        <!-- 'accept' forces file type -->
+        <input type="file" id="file" accept=".png, .jpeg, .jpg"> <br>
+
+        <!-- must have <form> to work -->
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>

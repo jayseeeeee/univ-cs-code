@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* display specifies how an element is display */
+
+        /* block level starts on new line & takes up full width available */
+        /* (h1, div, p, form, header, footer) */
+        #div1 {
+            background-color: lightcoral;
+            width: 100px;
+            height: 100px;
+            /* changes block to inline */
+            display: inline;
+        }
+        #div2 {
+            background-color: lightslategray;
+            width: 100px;
+            height: 100px;
+            /* removes it from the page like it did not exist */
+            display: none;
+            /* similar to display but only visibility is hidden */
+            visibility: hidden;
+
+        }
+        /* inline do not start new line, width is limited to what is needed */
+        /* (span, a, img) */
+        #span1 {
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            /* changes inline to block */
+            display: block;
+        }
+
+        /* inline block behaves like inline but can be customized like block element */
+        #span2 {
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">This is a div element with inline display</div>
+    <div id="div2">This is a div element with no display and no visibility</div>
+    <span id="span1">This is a span element with block display</span>
+    <span id="span2">This is another span element with inline block display</span>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, delectus nam tempora dolorem ipsa iste, beatae tempore iure maxime laborum accusamus nobis quas saepe? Iste ut pariatur nisi quae officia?
+</body>
+</html>

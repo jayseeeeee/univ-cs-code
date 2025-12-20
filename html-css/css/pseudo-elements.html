@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements</title>
+    <style>
+        /* ::first-letter pseudo-element */
+        p::first-letter {
+            color: red;
+        }
+
+        /* ::first-line pseudo-element */
+        p::first-line {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* ::selection pseudo-element */
+        p::selection {
+            background-color: black;
+            color: red;
+        }
+        
+        /* ::before pseudo-elements */
+        h1::before {
+            content: "A Netflix Original Series: ";
+            color: red;
+        }
+        #characters li::before {
+            content: "Character: ";
+            font-weight: bold;
+        }
+
+        /* ::after pseudo-elements */
+        #eleven::after {
+            content: " (El)";
+            color: blue;
+        }
+        #max::after {
+            content: " (Mad Max)";
+            color: purple;
+        }
+
+        /* ::marker pseudo-element */
+        #characters li::marker {
+            content: "🕰️ ";
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo-elements are keywords after selector to style specific part of element -->
+    <!-- h1::pseudo-element -->
+    <h1>Stranger Things</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ad a quis, tempora nihil dolorem fugit, debitis, ullam voluptas labore quae. Aut quaerat iure eligendi distinctio pariatur facilis, inventore rem?</p>
+    <ul id="characters">
+        <li id="eleven">Eleven</li>
+        <li id="max">Max</li>
+        <li id="mike">Mike</li>
+        <li id="dustin">Dustin</li>
+        <li id="lucas">Lucas</li>
+        <li id="will">Will</li>
+    </ul>
+</body>
+</html>

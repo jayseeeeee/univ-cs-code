@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+        div {
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+        #relative {
+            background-color: red;
+            position: relative;
+            top: 100px;
+            left: 50px;
+        }
+        #fixed {
+            background-color: orange;
+            position: fixed;
+            bottom: 0px;
+        }
+        #absolute {
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #sticky {
+            background-color: green;
+            position: sticky;
+            top: 10px;
+        }
+        #static {
+            background-color: blue;
+            position: static;
+        }
+    </style>
+</head>
+<body>
+    <!-- relative "pushes" in specified amount & direction -->
+    <!-- works backwards/opposite -->
+    <div id="relative"></div>
+
+    <!-- fixed depends on viewport -->
+    <!-- like those annoying unremovable ads -->
+    <div id="fixed">
+
+        <!-- absolute depends on ancestor -->
+        <!-- also "pushes" like "relative" -->
+        <div id="absolute"></div>
+
+    </div>
+
+    <!-- sticky depends on scroll position -->
+    <!-- clings to screen when passed -->
+    <div id="sticky"></div>
+
+    <!-- static is default -->
+    <!-- top, right, bottom, left does not work -->
+    <div id="static"></div> 
+</body>
+    
+</html>

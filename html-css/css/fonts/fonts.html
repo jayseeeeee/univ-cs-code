@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <style>
+        /* link to local fonts */
+        @font-face {
+            /* set name for font family */
+            font-family: 'League Spartan';
+            /* set location relative to this file */
+            src: url(LeagueSpartan-VariableFont_wght.ttf);
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url(Poppins-Regular.ttf);
+        }
+
+        h1 {
+            /* preceeding font family are fallback if before is not supported */
+            font-family: sans-serif, Arial,;
+        }
+        h2 {
+            /* use quotation ("") for font family with spaces */
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* different font-size */
+        #p1 {
+            font-family: 'Special Gothic Condensed One';
+            font-size: 1em;
+        }
+        #p2 {
+            font-family: 'Oswald';
+            font-size: 12px;
+        }
+
+        #p3 {
+            font-family: 'League Spartan';
+        }
+        #p4 {
+            font-family: 'Poppins';
+        }
+    </style>
+</head>
+<body>
+    <h1>My Website</h1>
+    <h2>Welcome, User!</h2>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore libero, itaque necessitatibus nemo obcaecati consequuntur laudantium fugit doloremque fugiat sint nulla et maxime omnis sed hic adipisci recusandae? Delectus!</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquid vitae sint autem earum alias deleniti corporis obcaecati, mollitia doloribus maiores ducimus magnam ipsam numquam ipsum! Vero ipsum maxime sint.</p>
+    <p id="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident nostrum voluptas voluptatum sed praesentium quis quod autem dolor sequi ipsam ea voluptates mollitia repudiandae aut, consectetur maiores aliquam explicabo nisi!</p>
+    <p id="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit iure rem incidunt, mollitia eaque illo ratione optio. Rerum modi quis et expedita tenetur amet natus sunt pariatur optio. Perferendis!</p>
+</body>
+</html>

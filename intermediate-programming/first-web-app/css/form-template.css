@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* league spartan, poppins, exo 2, open sans */
+html, body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2385c4;
+}
+/* reuse form */
+form {
+    padding: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f79630 10%, #f0f0f0 10%);
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+/* lahat ng labels at inputs toh */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/* form labels */
+.flex-container label {
+    color: gray;
+    font-size: 14px;
+    display: inline-block;
+    font-family: 'League Spartan';
+}
+/* form inputs */
+input, select {
+    padding-left: 10px;
+    margin: 5px 0;
+    /* make <select> width same as <input> */
+    box-sizing: border-box;
+    border: none;
+    height: 35px;
+    width: 175px;
+    color: gray;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+/* compress labels to inputs */
+.long-column label {
+    width: 110px;
+}
+.short-column label {
+    width: 70px;
+}
+.button {
+    border: none;
+    border-radius: 10px;
+    padding: 0px 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'League Spartan';
+    color: white;
+    background-color: #f79630;
+    text-align: center;
+    text-decoration: none;
+}
+.button:hover, a:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* title */
+h1 {
+    margin: 0;
+    font-family: 'League Spartan';
+    font-size: 40px;
+    font-weight: 500;
+    color: #f79630;
+}
+p, a {
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 14px;
+    text-decoration: none;
+}

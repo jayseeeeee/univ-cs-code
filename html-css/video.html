@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    
+    <!-- turns video into a clickable link -->
+    <a target="_blank" href="https://www.youtube.com/watch?v=bSD8EuXX2kc">
+        
+        <!--
+        creates video element from src 'file' or 'link'
+        'width' and 'height' set the size of the video
+        'controls' adds play, pause, and volume controls
+        'autoplay' starts the video automatically
+        'muted' mutes the video
+        'loop' makes the video play in a loop
+        -->
+        <video src="assets/stranger_things.mp4" width="500px" autoplay muted loop></video>
+    </a>
+        
+    <!-- no controls version -->
+    <video width="500px" controls autoplay loop>
+        <!-- 'type' sets backup when other video type fails/unsupported -->
+        <source src="assets/stranger_things.mp4" type="video/mp4">
+        <source src="assets/stranger_things.webm" type="video/webm">
+    </video>
+
+</body>
+</html>

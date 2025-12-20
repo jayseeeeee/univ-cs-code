@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- Link External CSS to this HTML -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .container {
+            background-color: gray;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Uses In-line CSS before External CSS -->
+    <h1 style="font-size: 40px;">This is an H1 header</h1>
+    <h1>This is another H1 header</h1>
+
+    <div>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is an outside div paragraph</p>
+
+    <div class="container">
+        <p>This is a paragraph inside a container</p>
+        <p>This is another paragraph inside a container</p>
+    </div>
+
+    <p id="pink">This is an outside container paragraph with ID</p>
+    <ul style="display: flex;"><p>poop</p>
+        <p>poop</p></ul>
+</body>
+</html>

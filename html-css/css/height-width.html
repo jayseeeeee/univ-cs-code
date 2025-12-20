@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height & Width</title>
+    <style>
+        /* asterisk (*) allows to apply to every element */
+        * {
+            /* box sizing respects actual height & width while still adding padding & border*/
+            box-sizing: content-box;
+        }
+        div {
+            margin: 5px;
+            padding: 25px;
+            border: 2px solid;
+
+            /* min sets minimum width/height*/
+            min-width: 200px;
+            min-height: 50%;
+            
+            /* max sets maximum width/height*/
+            max-width: 500px;
+            max-height: 50%;
+
+            /* height & width is auto by default*/
+            /* percentage (%) is dependent on viewport */
+            height: 200px;
+            width: 500px;
+            
+            /* float allows other elements to inline */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is a header</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque assumenda magni recusandae explicabo aliquid, ea consequatur odio vel sint blanditiis molestias, aliquam cum quaerat iste? Molestias nesciunt iure pariatur consectetur.</p>
+    </div>
+    <div>
+        <h1>This is another header</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fugiat doloribus deleniti, repellendus neque obcaecati temporibus quisquam sed quas, aut ut iste quasi consequatur illo, maiores eaque! Id, dignissimos voluptatibus.
+    </div>
+</body>
+</html>

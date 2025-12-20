@@ -1,0 +1,28 @@
+/* EXTERNAL CSS */
+/* Applies to all H1 header */
+h1 {
+    font-size: 20px;
+    /* Still applies to In-line*/
+    color: black;
+}
+
+p {
+    font-size: 16px;
+}
+
+div p {
+    color:blueviolet;
+}
+
+#pink {
+    color: pink;
+}
+
+p:hover {
+    color: red;
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+}

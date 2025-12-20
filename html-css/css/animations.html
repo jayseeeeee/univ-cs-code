@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .box {
+            animation-duration: 2s;
+            /* can be any value or infinite */
+            animation-iteration-count: infinite;
+            /* can be normal, reverse, alternate (loop), alternate-reverse */
+            animation-direction: alternate;
+            /* can be paused, running */
+            animation-play-state: running;
+            /* easing styles (can be steps() )*/
+            animation-timing-function: linear;
+            border: 0.05em solid;
+            border-radius: 0.2em;
+            font-size: 10em;
+            text-align: center;
+            height: 1.2em;
+            width: 1.2em;
+        }
+        #box1 {
+            animation-name: slideLeft;
+        }
+        #box2 {
+            animation-name: slideRight;
+        }
+        #box3 {
+            animation-name: slideUp;
+        }
+        #box4 {
+            animation-name: slideDown;
+        }
+        #box5 {
+            animation-name: rotate;
+        }
+        #box6 {
+            animation-name: grow;
+        }
+        #box7 {
+            animation-name: shrink;
+        }
+        #box8 {
+            animation-name: fade;
+        }
+        #box9:active {
+            animation-name: colorChange;
+        }
+        #box10:hover {
+            animation-name: glow;
+        }
+        @keyframes slideLeft {
+            from{transform: translateX(100vw)}
+        }
+        @keyframes slideRight {
+            to{transform: translateX(100vw)}
+        }
+        @keyframes slideUp {
+            from{transform: translateY(100vh)}
+        }
+        @keyframes slideDown {
+            to{transform: translateY(100vh)}
+        }
+        /* percentage makes remaining percentage to revert back */
+        @keyframes rotate {
+            25%{transform: rotateZ(360deg)}
+        }
+        @keyframes grow {
+            50%{transform: scale(2, 2)}
+        }
+        @keyframes shrink {
+            50%{transform: scale(0.5, 0.5)}
+        }
+        @keyframes fade {
+            50%{opacity: 0}
+        }
+        @keyframes colorChange {
+            0%{background-color: red;}
+            20%{background-color: orange;}
+            40%{background-color: yellow;}
+            60%{background-color: green;}
+            80%{background-color: blue;}
+            100%{background-color: purple;}
+        }
+        @keyframes glow {
+            50%{box-shadow: 0px 0px 50px black;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    <div class="box" id="box5">5</div>
+    <div class="box" id="box6">6</div>
+    <div class="box" id="box7">7</div>
+    <div class="box" id="box8">8</div>
+    <div class="box" id="box9">9</div>
+    <div class="box" id="box10">10</div>
+</body>
+</html>

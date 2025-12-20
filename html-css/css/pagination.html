@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        .pagination {
+            text-align: center
+        }
+        .pagination a {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            color: red;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold ;
+        }
+        .pagination a.active {
+            background-color: red;
+            color: white;
+        }
+        /* property when hover & not active */
+        .pagination a:not(.active):hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- pagination creates pages in document-->
+    <h1>Stranger Things</h1>
+    <h2>Character Profile</h2>
+    <h3>Eleven</h3>
+    <p>Eleven, also known as El, is a fictional character from the Netflix series Stranger Things. She is portrayed by actress Millie Bobby Brown. Eleven is introduced as a mysterious girl with a shaved head and extraordinary abilities, including telekinesis and telepathy. Raised in a secret government laboratory, she endured experiments that unlocked her powers but left her emotionally scarred and socially isolated. After escaping the lab, Eleven forms close bonds with a group of kids in Hawkins, especially Mike Wheeler, who becomes her best friend and love interest. Throughout the series, she struggles to adapt to normal life, learn about her past, and protect her friends from supernatural threats. Eleven's journey is one of resilience, self-discovery, and the search for belonging in a world that often fears her abilities.</p>
+    <div class="pagination">
+        <a href="#">&laquo; Previous</a>
+        <a href="eleven.html" class="active">1</a>
+        <a href="max.html">2</a>
+        <a href="mike.html">3</a>
+        <a href="lucas.html">4</a>
+        <a href="dustin.html">5</a>
+        <a href="max.html">Next &raquo;</a>
+    </div>
+</body>
+</html>

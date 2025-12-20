@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        body {
+            display: flex;
+            column-gap: 10px;
+            justify-content: center;
+        }
+        /* overflow sets desired behvaior when content does not fit parent element box (overflows) */
+        div {
+            width: 250px;
+            height: 500px;
+            border: 2px solid;
+        }
+        #visible {
+            /* allow to overflow */
+            overflow: visible
+        }
+        #hidden {
+            /* only hide the overflow but not delete */
+            overflow: hidden;
+        }
+        #clip {
+            /* allow overflow to certain extend and hide the rest */
+            overflow: clip;
+            overflow-clip-margin: 30px;
+        }
+        #scroll {
+            /* creates scrollbar instead*/
+            /* overflow: scroll forces scroll even when not needed, auto only creates if needed */
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="visible">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic est totam impedit reprehenderit perferendis illum? Doloribus odio esse nobis consequatur, provident dignissimos dolores. Eius assumenda repellendus porro qui eos sunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum sequi, sapiente libero commodi perspiciatis vel molestiae suscipit pariatur qui quam dolorum atque similique excepturi tenetur inventore maiores! Beatae, perferendis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat nemo deleniti tenetur quae debitis asperiores enim officiis fugiat dicta voluptates, nulla corporis nostrum quidem architecto soluta? Dolorum, optio nam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab possimus, ratione tempore dolorum ipsam officiis eum maxime laborum aliquid iure quidem numquam facilis corporis? Minima deserunt laudantium laborum et tempore.</p>
+    </div>
+    <div id="hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic est totam impedit reprehenderit perferendis illum? Doloribus odio esse nobis consequatur, provident dignissimos dolores. Eius assumenda repellendus porro qui eos sunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum sequi, sapiente libero commodi perspiciatis vel molestiae suscipit pariatur qui quam dolorum atque similique excepturi tenetur inventore maiores! Beatae, perferendis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat nemo deleniti tenetur quae debitis asperiores enim officiis fugiat dicta voluptates, nulla corporis nostrum quidem architecto soluta? Dolorum, optio nam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab possimus, ratione tempore dolorum ipsam officiis eum maxime laborum aliquid iure quidem numquam facilis corporis? Minima deserunt laudantium laborum et tempore.</p>
+    </div>
+    <div id="clip">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic est totam impedit reprehenderit perferendis illum? Doloribus odio esse nobis consequatur, provident dignissimos dolores. Eius assumenda repellendus porro qui eos sunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum sequi, sapiente libero commodi perspiciatis vel molestiae suscipit pariatur qui quam dolorum atque similique excepturi tenetur inventore maiores! Beatae, perferendis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat nemo deleniti tenetur quae debitis asperiores enim officiis fugiat dicta voluptates, nulla corporis nostrum quidem architecto soluta? Dolorum, optio nam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab possimus, ratione tempore dolorum ipsam officiis eum maxime laborum aliquid iure quidem numquam facilis corporis? Minima deserunt laudantium laborum et tempore.</p>
+    </div>
+    <div id="scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic est totam impedit reprehenderit perferendis illum? Doloribus odio esse nobis consequatur, provident dignissimos dolores. Eius assumenda repellendus porro qui eos sunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum sequi, sapiente libero commodi perspiciatis vel molestiae suscipit pariatur qui quam dolorum atque similique excepturi tenetur inventore maiores! Beatae, perferendis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat nemo deleniti tenetur quae debitis asperiores enim officiis fugiat dicta voluptates, nulla corporis nostrum quidem architecto soluta? Dolorum, optio nam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab possimus, ratione tempore dolorum ipsam officiis eum maxime laborum aliquid iure quidem numquam facilis corporis? Minima deserunt laudantium laborum et tempore.</p>
+    </div>
+</body>
+</html>

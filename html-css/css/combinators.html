@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        div {
+            border: 3px solid black;
+            margin: 50px 5px;
+            padding: 5px;
+        }
+        #descendant p {
+            background-color: red;
+        }
+        #children > p {
+            background-color: orange;
+        }
+        #general-sibling ~ p {
+            background-color: green;
+        }
+        #adjacent-sibling + p {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- combinators explains relationship between listed selectors -->
+    
+    <!-- " " = descendant -->
+    <!-- affects everything inside -->
+    <!-- like getdescendants() in roblox studio -->
+    <div id="descendant">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <div>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+        </div>
+    </div>
+
+    <!-- ">" = child -->
+    <!-- affects only child -->
+    <!-- like getchildren() in roblox studio -->
+    <div id="children">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <div>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+        </div>
+    </div>
+
+    <!-- "~" = general sibling -->
+    <!-- must be siblings/same level -->
+    <!-- affects all siblings -->
+    <div id="general-sibling">
+        <!-- will not be affected -->
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+    </div>
+    <p>Third paragraph</p>
+    <p>Fourth paragraph</p>
+
+    
+    <!-- "+" = adjacent sibling -->
+    <!-- must be siblings/same level -->
+    <!-- affects only nearest/first sibling -->
+    <div id="adjacent-sibling">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+    </div>
+    <p>Third paragraph</p>
+    <!-- will not be affected -->
+    <p>Fourth paragraph</p>
+</body>
+</html>

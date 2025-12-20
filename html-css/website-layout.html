@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(25, 25, 25);
+            color: white;
+            margin: 0;
+        }
+        header {
+            background-color: rgb(25, 25, 25);
+            color: rgb(173, 24, 24);
+            padding: 20px;
+            text-align: center;
+        }
+        .navbar {
+            background-color: rgb(38, 37, 37);
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            flex: 1;
+            text-align: center;
+            padding: 14px 16px;
+        }
+        .navbar a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            margin: 0px 20px;
+            overflow: hidden;
+        }
+        aside {
+            border-radius: 10px;
+            background-color: rgb(38, 37, 37);
+            margin-right: 20px;
+            padding: 20px;
+            width: 15%;
+            float: left;
+        }
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        section {
+            width: 20%;
+            float: left;
+        }
+        article {
+            width: 35%;
+            float: left;
+        }
+        div {
+            width: 25%;
+            float: left;
+        }
+        footer {
+            clear: both;
+            display: block;
+            background-color: rgb(38, 37, 37);
+            bottom: 0;
+            padding: 10px;
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+        /* responsive css */
+        /* for mobile device */
+        @media screen and (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+            aside, section, article, div {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- semantic tags -->
+    
+    <!-- introductory content -->
+    <header>
+        <h1>STRANGER THINGS NEWS</h1>
+    </header>
+
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- main content area (section, aside, article, div) -->
+    <main>
+        <h2>Main Content</h2>
+        <p>This is where the main content of the website goes.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+        <!-- sidebar for additional content -->
+        <aside>
+            <h3>Sidebar</h3>
+            <p>This is a sidebar with additional information or links.</p>
+            <ul>
+                <li><a href="#">Related Link 1</a></li>
+                <li><a href="#">Related Link 2</a></li>
+                <li><a href="#">Related Link 3</a></li>
+            </ul>
+        </aside>
+        
+        <!-- section for additional/dependent content -->
+        <section>
+            <h2>Additional Section</h2>
+            <p>This section can contain additional information or features.</p>
+            <p>Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        </section>
+
+        <!-- article for a specific topic -->
+        <article>
+            <h2>Article Title</h2>
+            <p>This article discusses a specific topic in detail.</p>
+            <p>Phasellus iaculis neque purus sodales ultricies. Curabitur ac felis arcu sadips ipsums fugiats nemis.</p>
+        </article>
+
+        <!-- div for generic content -->
+        <div>
+            <h2>Generic Div Content</h2>
+            <p>This is a generic div element that can be used for any purpose.</p>
+            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
+        </div>
+    </main>
+
+    <!-- footer for copyright and additional links -->
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+            border: 2px solid black;
+            display: inline-block;   
+            border-radius: 12px;
+            width: 200px;
+            margin: 5px;
+        }
+        .gallery img {   
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery .description {
+            padding: 5px;
+            text-align: center;
+        }
+        .gallery:hover {
+            border: 2px solid red;
+            box-shadow: 1px 1px 3px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <a target="_blank" href="https://s2.r29static.com/bin/entry/75e/x,80/2214031/image.jpg">
+            <img src="https://s2.r29static.com/bin/entry/75e/x,80/2214031/image.jpg" alt="Picture of Eleven">
+        </a>
+        <div class="description">
+            Eleven
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://www.tvinsider.com/wp-content/uploads/2019/07/sadie-sink-max-1014x570.jpg">
+            <img src="https://www.tvinsider.com/wp-content/uploads/2019/07/sadie-sink-max-1014x570.jpg" alt="Picture of Max Mayfield">
+        </a>
+        <div class="description">
+            Max
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIxg7WlxUGoa-bbM3QA-V1Z6pi04648m17-w&s">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIxg7WlxUGoa-bbM3QA-V1Z6pi04648m17-w&s" alt="Picture of Lucas">
+        </a>
+        <div class="description">
+            Lucas
+        </div>
+    </div>
+</body>
+</html>
