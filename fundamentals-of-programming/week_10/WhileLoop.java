@@ -1,3 +1,5 @@
+package week_10;
+
 import java.util.Scanner;
 
 public class WhileLoop {

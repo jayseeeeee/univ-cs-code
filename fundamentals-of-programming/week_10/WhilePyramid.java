@@ -1,3 +1,5 @@
+package week_10;
+
 public class WhilePyramid {
     public static void main(String[] args) {
         int i = 1;

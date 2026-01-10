@@ -48,37 +48,35 @@ class Student {
     }
 }
 
-public class GettersAndSetters {
-    public static void main(String[] args) {
-        // instantiate scanner
-        Scanner input = new Scanner(System.in);
+void main() {
+    // instantiate scanner
+    Scanner input = new Scanner(System.in);
 
-        // get initial input
-        System.out.print("Enter Student Name: ");
-        String name = input.nextLine();
+    // get initial input
+    System.out.print("Enter Student Name: ");
+    String name = input.nextLine();
 
-        System.out.print("Enter Age: ");
-        byte age = input.nextByte();
+    System.out.print("Enter Age: ");
+    byte age = input.nextByte();
 
-        System.out.print("Enter Grade: ");
-        float grade = input.nextFloat();
+    System.out.print("Enter Grade: ");
+    float grade = input.nextFloat();
 
-        // instantiate student
-        Student myStudent = new Student(name, age, grade);
+    // instantiate student
+    Student myStudent = new Student(name, age, grade);
 
-        // display initial details
-        System.out.println("\nStudent Information:");
-        myStudent.displayStudentInfo();
+    // display initial details
+    System.out.println("\nStudent Information:");
+    myStudent.displayStudentInfo();
 
-        // update grade
-        System.out.print("\nEnter New Grade: ");
-        myStudent.setGrade(input.nextFloat());
+    // update grade
+    System.out.print("\nEnter New Grade: ");
+    myStudent.setGrade(input.nextFloat());
 
-        // display updated details
-        System.out.println("Updated Student Information:");
-        myStudent.displayStudentInfo();
+    // display updated details
+    System.out.println("Updated Student Information:");
+    myStudent.displayStudentInfo();
 
-        // close scanner to avoid memory leak
-        input.close();
-    }
+    // close scanner to avoid memory leak
+    input.close();
 }

@@ -1,3 +1,5 @@
+package week_9;
+
 public class ChristmasLoop {
     public static void main(String[] args) {
         for(byte day = 1; day <=12; day++)

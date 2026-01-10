@@ -1,3 +1,5 @@
+package week_11;
+
 import java.util.*;
 
 public class SumArrayList {

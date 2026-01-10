@@ -1,3 +1,5 @@
+package week_10;
+
 import java.util.Random;
 
 public class DiceRoller {
