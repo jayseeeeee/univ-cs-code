@@ -18,7 +18,7 @@ void main() {
             g2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
             // Draw Image
-            Image background = new ImageIcon("univ-cs-codes/java/swing/assets/background.jpg").getImage();
+            Image background = new ImageIcon("java/swing/assets/background.jpg").getImage();
             g2D.drawImage(background, 0, 0, 1280, 720, null);
 
             // Draw Line

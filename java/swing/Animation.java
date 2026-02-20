@@ -22,9 +22,9 @@ class MyPanel extends JPanel {
     int y = new Random().nextInt(314);
     double angle = 0; // Rotation angle in radians
 
-    Image demogorgon = new ImageIcon("univ-cs-codes/java/swing/assets/demogorgon_head.png").getImage();
+    Image demogorgon = new ImageIcon("java/swing/assets/demogorgon_head.png").getImage();
     Image iconSize = demogorgon.getScaledInstance(106, 128, Image.SCALE_SMOOTH);
-    Image background = new ImageIcon("univ-cs-codes/java/swing/assets/alphabet_background.png").getImage();
+    Image background = new ImageIcon("java/swing/assets/alphabet_background.png").getImage();
 
     MyPanel() {
         setPreferredSize(new Dimension(512, 512));

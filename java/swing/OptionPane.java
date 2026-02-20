@@ -34,7 +34,7 @@ void main() {
             Current height: %.1fcm""", name, age, height));
 
     // Confirm Dialog – Displays a pop-up with 'Yes/No' or 'Yes/No/Cancel' buttons.
-    Image trance = new ImageIcon("univ-cs-codes/java/swing/assets/max_trance.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image trance = new ImageIcon("java/swing/assets/max_trance.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon tranceIcon = new ImageIcon(trance);
     int answer = JOptionPane.showConfirmDialog(null, "Do you want to continue?");
     int confirm = JOptionPane.showConfirmDialog(null, "Do you accept the risks?", "Confirmation", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, tranceIcon); // 'ImageIcon' replaces 'MessageType' icon
@@ -43,7 +43,7 @@ void main() {
     }
 
     // Option Dialog – Displays a pop-up of selectable predefined list of options.
-    ImageIcon icon = new ImageIcon("univ-cs-codes/java/swing/assets/logo.jpg");
+    ImageIcon icon = new ImageIcon("java/swing/assets/logo.jpg");
     String[] party = {"Mike", "Dustin", "Lucas", "Will", "Eleven", "Max"};
     String member = JOptionPane.showInputDialog(
             null,
