@@ -9,13 +9,13 @@ void main() {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setLayout(new FlowLayout());
 
-    Image mike = new ImageIcon("univ-cs-codes/java/swing/assets/mike.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image mike = new ImageIcon("java/swing/assets/mike.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon mikeIcon = new ImageIcon(mike);
-    Image will = new ImageIcon("univ-cs-codes/java/swing/assets/will.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image will = new ImageIcon("java/swing/assets/will.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon willIcon = new ImageIcon(will);
-    Image dustin = new ImageIcon("univ-cs-codes/java/swing/assets/dustin.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image dustin = new ImageIcon("java/swing/assets/dustin.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon dustinIcon = new ImageIcon(dustin);
-    Image lucas = new ImageIcon("univ-cs-codes/java/swing/assets/lucas.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image lucas = new ImageIcon("java/swing/assets/lucas.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon lucasIcon = new ImageIcon(lucas);
 
     JRadioButton mikeButton = new JRadioButton("Mike");

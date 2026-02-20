@@ -27,5 +27,4 @@ void main() {
 
     frame.add(panel, BorderLayout.NORTH);
     frame.setVisible(true);
-
 }

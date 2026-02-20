@@ -11,7 +11,7 @@ void main() {
     label.setText("Sorcerer - Eleven"); // Set label text
 
     // Get scaled down image before setting as icon to label
-    Image image = new ImageIcon("univ-cs-codes/java/swing/assets/eleven.png").getImage();
+    Image image = new ImageIcon("java/swing/assets/eleven.png").getImage();
     Image scaledImage = image.getScaledInstance(128, 144, Image.SCALE_SMOOTH);
     ImageIcon imageIcon = new ImageIcon(scaledImage);
     label.setIcon(imageIcon); // Set label image icon

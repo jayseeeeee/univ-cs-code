@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.event.MenuEvent;
+import javax.swing.event.MenuListener;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
@@ -11,13 +13,13 @@ void main() {
     frame.setSize(500,200);
     frame.setLocationRelativeTo(null);
 
-    Image mikeImage = new ImageIcon("univ-cs-codes/java/swing/assets/mike.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image mikeImage = new ImageIcon("java/swing/assets/mike.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon mikeIcon = new ImageIcon(mikeImage);
-    Image willImage = new ImageIcon("univ-cs-codes/java/swing/assets/will.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image willImage = new ImageIcon("java/swing/assets/will.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon willIcon = new ImageIcon(willImage);
-    Image dustinImage = new ImageIcon("univ-cs-codes/java/swing/assets/dustin.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image dustinImage = new ImageIcon("java/swing/assets/dustin.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon dustinIcon = new ImageIcon(dustinImage);
-    Image lucasImage = new ImageIcon("univ-cs-codes/java/swing/assets/lucas.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image lucasImage = new ImageIcon("java/swing/assets/lucas.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon lucasIcon = new ImageIcon(lucasImage);
 
     // Build menu bar and menus
@@ -33,7 +35,22 @@ void main() {
     JMenuItem lucas = new JMenuItem("Lucas", lucasIcon);
 
     // Action listeners should be short, heavy work should be offloaded to background threads.
-    exit.addActionListener(_ -> System.exit(0));
+    exit.addMenuListener(new MenuListener() {
+        @Override
+        public void menuSelected(MenuEvent e) {
+            System.out.println("Menu is selected.");
+        }
+
+        @Override
+        public void menuDeselected(MenuEvent e) {
+            System.exit(0);
+        }
+
+        @Override
+        public void menuCanceled(MenuEvent e) {
+            System.out.println("Menu is cancelled");
+        }
+    });
     mike.addActionListener(_ -> IO.println("You selected Mike Wheeler!"));
     will.addActionListener(_ -> IO.println("You selected Will Byers!"));
     dustin.addActionListener(_ -> IO.println("You selected Dustin Henderson!"));

@@ -9,9 +9,9 @@ void main() {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setLayout(new FlowLayout());
 
-    Image normalImage = new ImageIcon("univ-cs-codes/java/swing/assets/max_normal.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image normalImage = new ImageIcon("java/swing/assets/max_normal.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon normalIcon = new ImageIcon(normalImage);
-    Image tranceImage = new ImageIcon("univ-cs-codes/java/swing/assets/max_trance.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
+    Image tranceImage = new ImageIcon("java/swing/assets/max_trance.png").getImage().getScaledInstance(64, 64, Image.SCALE_SMOOTH);
     ImageIcon tranceIcon = new ImageIcon(tranceImage);
 
     JCheckBox checkBox = new JCheckBox();

@@ -13,7 +13,7 @@ void main() {
     frame.setLocationRelativeTo(null);
     frame.setLayout(null);
 
-    Image elevenImage = new ImageIcon("univ-cs-codes/java/swing/assets/eleven_full.png").getImage().getScaledInstance(70, 128, Image.SCALE_SMOOTH);
+    Image elevenImage = new ImageIcon("java/swing/assets/eleven_full.png").getImage().getScaledInstance(70, 128, Image.SCALE_SMOOTH);
     ImageIcon elevenIcon = new ImageIcon(elevenImage);
 
     JLabel label = new JLabel(elevenIcon);

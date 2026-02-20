@@ -10,7 +10,7 @@ void main() {
     frame.setLocationRelativeTo(null);
     frame.setLayout(null);
 
-    Image image = new ImageIcon("univ-cs-codes/java/swing/assets/eleven.png").getImage();
+    Image image = new ImageIcon("java/swing/assets/eleven.png").getImage();
     Image scaledImage = image.getScaledInstance(128, 144, Image.SCALE_SMOOTH);
     ImageIcon imageIcon = new ImageIcon(scaledImage);
 

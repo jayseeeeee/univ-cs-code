@@ -26,7 +26,7 @@ void main() {
     frame.setLocationRelativeTo(null);
 
     // Set the window icon using an image file
-    ImageIcon icon = new ImageIcon("univ-cs-codes/java/swing/assets/logo.jpg"); // Ensure this file exists
+    ImageIcon icon = new ImageIcon("java/swing/assets/logo.jpg"); // Ensure this file exists
     frame.setIconImage(icon.getImage());
 
     // Set the background color of the content pane
@@ -76,7 +76,7 @@ class MyProgram extends JFrame {
         setCursor(new Cursor(Cursor.CROSSHAIR_CURSOR));
         getContentPane().setBackground(new Color(0, 0, 0));
 
-        ImageIcon icon = new ImageIcon("univ-cs-codes/java/swing/assets/logo.jpg");
+        ImageIcon icon = new ImageIcon("java/swing/assets/logo.jpg");
         setIconImage(icon.getImage());
 
         setVisible(true);
