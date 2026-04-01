@@ -31,13 +31,13 @@ public class AccessModifiers {
     }
 }
 
-class defaultClass {
+class DefaultClass {
     // 'private' and 'protected' classes are only possible within inner class
-    private class privateClass {
+    private class PrivateClass {
 
     }
 
-    protected class protectedClass {
+    protected class ProtectedClass {
 
     }
 }

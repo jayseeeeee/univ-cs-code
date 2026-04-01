@@ -9,10 +9,10 @@ public class Serialization {
 
         // Serialize the object to a file
         try (
-                // Create a 'FileOutputStream' to write to Students.ser
-                FileOutputStream studentFile = new FileOutputStream("out/Serialization/Students.ser");
-                // Wrap the file stream with an 'ObjectOutputStream' to write objects
-                ObjectOutputStream studentObject = new ObjectOutputStream(studentFile)
+            // Create a 'FileOutputStream' to write to Students.ser
+            FileOutputStream studentFile = new FileOutputStream("out/Serialization/Students.ser");
+            // Wrap the file stream with an 'ObjectOutputStream' to write objects
+            ObjectOutputStream studentObject = new ObjectOutputStream(studentFile)
         ) {
             // Write the object to the file
             studentObject.writeObject(maxine);
@@ -29,10 +29,10 @@ public class Serialization {
 
         // Deserialize the object from the file
         try (
-                // Create a 'FileInputStream' to read from Students.ser
-                FileInputStream studentFile = new FileInputStream("out/Serialization/Students.ser");
-                // Wrap the file stream with an 'ObjectInputStream' to read objects
-                ObjectInputStream studentObject = new ObjectInputStream(studentFile)
+            // Create a 'FileInputStream' to read from Students.ser
+            FileInputStream studentFile = new FileInputStream("out/Serialization/Students.ser");
+            // Wrap the file stream with an 'ObjectInputStream' to read objects
+            ObjectInputStream studentObject = new ObjectInputStream(studentFile)
         ) {
             // Read the object and cast it back to Students
             maxineSave = (Students) studentObject.readObject();

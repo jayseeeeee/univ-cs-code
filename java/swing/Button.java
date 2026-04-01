@@ -30,23 +30,15 @@ void main() {
     // Create a standard JButton with an anonymous ActionListener
     JButton leftButton = new JButton();
     leftButton.setBounds(150, 200, 200, 50);
-    leftButton.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent event) {
-            new Thread() {
-                @Override
-                public void run() {
-                    leftButton.setText("Left button clicked!");
-                    try {
-                        Thread.sleep(3000);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                    leftButton.setText("");
-                }
-            }.start();
+    leftButton.addActionListener(_ -> new Thread(() -> {
+        leftButton.setText("Left button clicked!");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
-    });
+        leftButton.setText("");
+    }).start());
 
     // Create another JButton using lambda for concise event handling
     JButton rightButton = new JButton();
