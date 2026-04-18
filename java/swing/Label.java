@@ -22,7 +22,7 @@ void main() {
 
     // Set position of text relative to the label image
     label.setHorizontalTextPosition(JLabel.CENTER); // LEFT, CENTER, RIGHT
-    label.setVerticalTextPosition(JLabel.BOTTOM); // Text TOP, CENTER, BOTTOM
+    label.setVerticalTextPosition(JLabel.BOTTOM); // TOP, CENTER, BOTTOM
 
     // Customize font name, style, size, and color of text
     label.setFont(new Font("Times New Roman", Font.BOLD,20));
