@@ -15,9 +15,6 @@ CREATE TABLE test (
      preferences JSON -- Structured JSON data
 );
 
--- Select all columns from table 'test'
-SELECT * FROM test;
-
 -- Renames the table 'test' to 'subject'
 RENAME TABLE test TO subject;
 
