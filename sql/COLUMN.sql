@@ -14,4 +14,4 @@ ALTER TABLE subject MODIFY subject_number INT AFTER last_name;
 ALTER TABLE subject MODIFY subject_number INT FIRST;
 
 -- Deletes the column 'created_at' from the table 'subject'
-ALTER TABLE subject DROP COLUMN created_at;
+ALTER TABLE subject DROP created_at;
