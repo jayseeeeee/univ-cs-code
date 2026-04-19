@@ -5,7 +5,7 @@ ALTER TABLE subject ADD quotation TEXT;
 ALTER TABLE subject RENAME COLUMN quotation TO catchphrase;
 
 -- Change the column 'catchphrase' datatype from 'text' to 'varchar' with 500 max characters instead
-ALTER TABLE subject MODIFY COLUMN catchphrase VARCHAR(500);
+ALTER TABLE subject MODIFY catchphrase VARCHAR(500);
 
 -- Change the column datatype and sequence
 -- The 'subject_number' column should come after the 'last_name' column
