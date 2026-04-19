@@ -4,7 +4,7 @@ CREATE TABLE test (
      subject_number INT, -- Integer identifier
      first_name VARCHAR(50), -- Variable-length string
      last_name VARCHAR(50), -- Variable-length string
-     height DECIMAL(2,2), -- Numeric with precision/scale
+     height DECIMAL(3,2), -- Numeric with precision/scale
      birth_date DATE, -- Calendar date
      birth_time TIME, -- Calendar date
      powers TEXT, -- Large text field
