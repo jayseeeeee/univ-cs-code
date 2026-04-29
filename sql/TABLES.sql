@@ -2,8 +2,7 @@
 -- It should contain the column name and its data type
 CREATE TABLE test (
      subject_number INT, -- Integer identifier
-     first_name VARCHAR(50), -- Variable-length string
-     last_name VARCHAR(50), -- Variable-length string
+     name VARCHAR(50), -- Variable-length string
      height DECIMAL(3,2), -- Numeric with precision/scale
      birth_date DATE, -- Calendar date
      birth_time TIME, -- Calendar date
