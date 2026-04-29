@@ -8,8 +8,8 @@ ALTER TABLE subject RENAME COLUMN quotation TO catchphrase;
 ALTER TABLE subject MODIFY COLUMN catchphrase VARCHAR(500);
 
 -- Change the column datatype and sequence
--- The 'subject_number' column should come after the 'last_name' column
-ALTER TABLE subject MODIFY COLUMN subject_number INT AFTER last_name;
+-- The 'subject_number' column should come after the 'name' column
+ALTER TABLE subject MODIFY COLUMN subject_number INT AFTER name;
 -- The 'subject_number' column is placed first before all column
 ALTER TABLE subject MODIFY COLUMN subject_number INT FIRST;
 
