@@ -19,7 +19,7 @@ CREATE TABLE party (
     -- Not adding 'CONSTRAINT' name auto-generates constraint name instead
     age INT,
     CONSTRAINT chk_age CHECK (age > 0),
-    join_date DATE CHECK (join_date <= '1980-01-31'),
+    join_date DATE CHECK (join_date <= '1990-01-31'),
     CHECK (join_date >= '1980-01-31'),
     CONSTRAINT chk_join_date CHECK (join_date >= '1980-01-31'),
 
@@ -45,7 +45,6 @@ ALTER TABLE subject AUTO_INCREMENT = 001; -- Adjust 'AUTO_INCREMENT' starting po
 ALTER TABLE party DROP CONSTRAINT party_chk_1;
 ALTER TABLE party DROP CHECK party_chk_2;
 ALTER TABLE party DROP FOREIGN KEY party_ibfk_1;
-
 
 -- Sample Data
 INSERT INTO party (name, age, join_date)
