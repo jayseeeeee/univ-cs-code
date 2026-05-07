@@ -2,13 +2,13 @@
 SELECT * FROM subject;
 
 -- Show only specific column entries from table 'subject'
-SELECT subject_number, first_name, last_name FROM subject;
+SELECT subject_number, name FROM subject;
 
 -- Show column entries that meet the specified condition
 SELECT * FROM subject WHERE subject_number = 11;
-SELECT * FROM subject WHERE first_name = 'Kali';
+SELECT * FROM subject WHERE name = 'Kali Prasad';
 SELECT * FROM subject WHERE height >= 1.6;
 SELECT * FROM subject WHERE birth_date < '1970-01-01';
 SELECT * FROM subject WHERE subject_number != 2;
 SELECT * FROM subject WHERE height IS NULL;
-SELECT * FROM subject WHERE last_name IS NOT NULL;
+SELECT * FROM subject WHERE name IS NOT NULL;
