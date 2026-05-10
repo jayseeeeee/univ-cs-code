@@ -4,6 +4,9 @@ SELECT * FROM subject;
 -- Show only specific column entries from table 'subject'
 SELECT subject_number, name FROM subject;
 
+-- Show specific columns from table 'subject' without duplicate entries
+SELECT DISTINCT join_date FROM party;
+
 -- Show column entries that meet the specified condition
 SELECT * FROM subject WHERE subject_number = 11;
 SELECT * FROM subject WHERE name = 'Kali Prasad';
