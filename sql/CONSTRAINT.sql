@@ -26,7 +26,8 @@ CREATE TABLE party (
     -- 'FOREIGN KEY' references a key from another table like 'subject'
     -- SQL will prevent actions that destroy the link of the reference table
     subject_number INT,
-    CONSTRAINT fk_subject_number FOREIGN KEY (subject_number) REFERENCES subject(subject_number),
+    CONSTRAINT fk_subject_number FOREIGN KEY (subject_number) REFERENCES subject(subject_number)
+    ON DELETE SET NULL, -- Set value to NULL when referenced value is deleted
     FOREIGN KEY (subject_number) REFERENCES subject(subject_number)
 );
 
@@ -35,7 +36,8 @@ CREATE TABLE party (
 ALTER TABLE subject ADD PRIMARY KEY (subject_number); -- PRIMARY KEY
 ALTER TABLE subject ADD UNIQUE(name); -- UNIQUE
 ALTER TABLE subject ADD CHECK(height > 1.5) ; -- CHECK
-ALTER TABLE party ADD FOREIGN KEY (subject_number) REFERENCES subject(subject_number);
+ALTER TABLE party ADD FOREIGN KEY (subject_number) REFERENCES subject(subject_number) -- FOREIGN KEY
+ON DELETE CASCADE; -- Deletes row when referenced value is deleted
 
 ALTER TABLE subject MODIFY COLUMN powers BOOLEAN DEFAULT TRUE; -- DEFAULT
 ALTER TABLE subject MODIFY COLUMN name VARCHAR(50) NOT NULL; -- NOT NULL
@@ -44,7 +46,7 @@ ALTER TABLE subject AUTO_INCREMENT = 001; -- Adjust 'AUTO_INCREMENT' starting po
 -- Removing constraints from a table
 ALTER TABLE party DROP CONSTRAINT party_chk_1;
 ALTER TABLE party DROP CHECK party_chk_2;
-ALTER TABLE party DROP FOREIGN KEY party_ibfk_1;
+ALTER TABLE party DROP FOREIGN KEY fk_subject_number;
 
 -- Sample Data
 INSERT INTO party (name, age, join_date)
