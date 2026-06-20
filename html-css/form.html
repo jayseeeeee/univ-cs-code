@@ -77,15 +77,22 @@
 
         <br>
 
-        <!-- select & options -->
-        <label for="payment">Payment</label>
-        <!-- options can be created from select tags -->
-        <select>
-            <option value="visa">Visa</option>
-            <option value="mastercard">Mastercard</option>
-            <option value="paypal">Paypal</option>
-        </select>
+        <!-- range input -->
+        <label for="income">Income</label>
+        <!-- similar to number input but uses slider instead -->
+        <input type="range" id="income" min="0" max="100" value="0">
 
+        <br>
+
+        <!-- select & options -->
+        <label for="payment">Payment
+            <!-- options can be created from select tags -->
+            <select id="payment">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </label>
         <br>
 
         <!-- checkbox input -->
