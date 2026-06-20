@@ -14,6 +14,9 @@
             height: 200px;
             border: 3px solid black;
             border-radius: 15px;
+            text-align: center;
+            align-content: center;
+            font-size: 3rem;
         }
         #relative {
             background-color: red;
@@ -46,25 +49,26 @@
 <body>
     <!-- relative "pushes" in specified amount & direction -->
     <!-- works backwards/opposite -->
-    <div id="relative"></div>
+    <div id="relative">Relative</div>
 
     <!-- fixed depends on viewport -->
     <!-- like those annoying unremovable ads -->
     <div id="fixed">
+        Fixed
 
         <!-- absolute depends on ancestor -->
         <!-- also "pushes" like "relative" -->
-        <div id="absolute"></div>
+        <div id="absolute">Absolute</div>
 
     </div>
 
     <!-- sticky depends on scroll position -->
     <!-- clings to screen when passed -->
-    <div id="sticky"></div>
+    <div id="sticky">Sticky</div>
 
     <!-- static is default -->
     <!-- top, right, bottom, left does not work -->
-    <div id="static"></div> 
+    <div id="static">Static</div>
 </body>
     
 </html>
