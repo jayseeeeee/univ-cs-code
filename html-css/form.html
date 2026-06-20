@@ -11,7 +11,7 @@
     'post' is for confidential data
     'get' is for insensitive data
     'enctype' is the encoding type of the form data (file uploads) -->
-    <form action="index.php" method="post", enctype="multipart/form-data">
+    <form action="index.php" method="post" enctype="multipart/form-data">
 
         <!-- label should be combined with input
         'for' can be read by screen reader/visually impaired
@@ -66,8 +66,8 @@
 
         <br>
 
-        <!-- range input -->
-        <label for="range">Sex:</label>
+        <!-- radio input -->
+        <label>Sex:</label>
         <!-- 'value' is the data to send when submit
         'name' groups radio elements so only one can be selected -->
         <label for="male">Male</label>
@@ -93,7 +93,7 @@
         <!-- 'checked' makes checkbox selected by default -->
         <input type="checkbox" id="terms"> <br>
 
-        <!-- textarea -->
+        <!-- text area -->
         <label for="suggestion"></label>
         <!-- 'rows' is the number of rows to display
         'cols' is the number of columns to display -->
