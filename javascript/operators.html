@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operators</title>
+</head>
+<body>
+<script>
+    // Arithmetic Operators
+    let x = 4;
+    let y = 2;
+
+    let z;
+
+    // Addition
+    z = x + y;
+    z += y;
+    ++z // Add before
+    console.log("Addition:", z, z++); // Add after
+
+    // Substraction
+    z = x - y;
+    z -= y;
+    --z // Minus before
+    console.log("Substraction:", z, z--); // Minus after
+
+    // Multiplication
+    z = x * y;
+    z *= y;
+    console.log("Multiplication:", z);
+
+    // Division
+    z = x / y;
+    z /= y;
+    console.log("Division:", z);
+
+    // Exponent
+    z = x ** y;
+    z **= y;
+    console.log("Exponent:", z);
+
+    // Modulus
+    z = x % y;
+    z %= y;
+    console.log("Modulus:", z);
+
+    // JavaScript follows Operator Precedence (PEMDAS)
+    // 1. Parenthesis
+    // 2. Exponents
+    // 3. Multiplication -> Division -> Modulo
+    // 4. Addition -> Substraction
+
+    let result = 20 - 3 ** 2 * 2 + (4 + 6) / 5
+    console.log("PEMDAS Result:", result);
+</script>
+</body>
+</html>
