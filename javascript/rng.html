@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RNG</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        #number {
+            margin: 0;
+            font-size: 16rem;
+            line-height: 14rem;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            color: #1e1e1e;
+        }
+        button {
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 1rem 3rem;
+            margin: 0.1rem;
+            border-radius: 0.8rem ;
+            box-shadow: 0 0.1rem 0.1rem rgb(0 0 0 / 0.15);
+            transition: 0.2s;
+        }
+        #max, #min {
+            height: 1.5rem;
+            width: 2.5rem;
+            margin: 0.5rem;
+        }
+        button:hover {
+            background-color: dimgray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h2>Your random number is</h2>
+<h1 id="number">0</h1>
+<label for="max">Max</label><input type="number" name="max" id="max">
+<label for="min">Min</label><input type="number" name="min" id="min"> <br>
+<button id="generate">Generate</button>
+<script>
+    let number = document.getElementById('number');
+    let generate = document.getElementById('generate');
+    let max = document.getElementById('max');
+    let min = document.getElementById('min');
+
+    generate.onclick = function () {
+        const randomNumber = Math.trunc(Math.random() * (max.value - min.value) + min.value)
+        number.textContent = String(randomNumber);
+    }
+</script>
+</body>
+</html>
