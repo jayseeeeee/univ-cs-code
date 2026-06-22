@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If Statements</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        button {
+            border: none;
+            border-radius: 0.8rem;
+            box-shadow: 0 0.1rem 0.1rem rgb(0 0 0 / 0.15);
+            color: dimgray;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 8rem 0;
+            padding: 1rem 3rem;
+            transition: 0.2s;
+        }
+        button:hover {
+            background-color: darkred;
+            color: white;
+            box-shadow: 0 0.5rem 0.5rem rgb(255 0 0 / 0.15);
+        }
+        h1 {
+            color: darkred;
+            font-size: 2rem;
+        }
+        h2 {
+            color: gray;
+            font-size: 1.2rem;
+        }
+        #age {
+            color: #1e1e1e;
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+        #checkbox {
+            accent-color: darkred;
+            cursor: pointer;
+            height: 1.5rem;
+            margin: 1rem;
+            width: 1.5rem;
+        }
+        #number {
+            color: darkred;
+            font-size: 3rem;
+            font-weight: bold;
+            height: 4rem;
+            margin: 1.5rem;
+            text-align: center;
+            width: 6rem;
+        }
+        #residence {
+            display: inline-block;
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+<label for="number" id="age">I am currently <input type="number" name="age" id="number"> years old.</label> <br>
+<label for="checkbox" id="residence">I am residing in Hawkins, Indiana.</label><input type="checkbox" name="residence" id="checkbox"> <br>
+<button type="submit" id="submit">Join Party</button>
+<h2 id="group"></h2>
+<h1 id="statement"></h1>
+</body>
+<script>
+    let checkbox = document.getElementById('checkbox');
+    let group = document.getElementById('group');
+    let number = document.getElementById('number');
+    let statement = document.getElementById('statement');
+    let submit = document.getElementById('submit');
+
+    submit.onclick = function () {
+        // If Statements executes a block of code if a condition is true
+        // It executes something else if the condition is false
+        if (checkbox.checked) {
+            // Nested If Statements
+            if (number.value >= 60) { // '>' includes 60 and above.
+                group.textContent = "Your are an elder.";
+                statement.textContent = "Sorry, no oldies allowed in here!";
+            } else if (number.value >= 18) { //
+                group.textContent = "Your are an adult.";
+                statement.textContent = "Sorry, only teenagers are allowed!";
+            } else if (number.value >= 12) {
+                group.textContent = "Your are a teenager.";
+                statement.textContent = "Welcome to the party, nerd...";
+            } else if (number.value > 0) {
+                group.textContent = "Your are a kid.";
+                statement.textContent = "Sorry, you are too young!";
+            } else {
+                group.textContent = "";
+                statement.textContent = "Oops! You entered an invalid age.";
+            }
+        } else {
+            group.textContent = "";
+            statement.textContent = "Sorry, you must be a Hawkins resident to join!";
+        }
+    }
+</script>
+</html>
