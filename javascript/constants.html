@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constants</title>
+</head>
+<body>
+<label for="input">Enter the radius of the circle (in cm):</label>
+<input type="text" name="" id="input">
+<button id="submit">Submit</button>
+<h1 id="circle"> </h1>
+<script>
+    // Const (constant) is a variable that cannot be changed.
+
+    // All constant non-string value should be capitalized
+    const PI = 22/7 // This value is unchangeable and reassigning will cause an error.
+
+    document.getElementById('submit').onclick = function() {
+        let radius = Number(document.getElementById('input').value);
+        let circumference = 2 * PI * radius;
+        document.getElementById('circle').textContent = `The circumference of the circle is ${circumference} cm.`;
+    };
+</script>
+</body>
+</html>
