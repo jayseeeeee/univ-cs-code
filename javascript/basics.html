@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics</title>
+</head>
+<body>
+<h1 id="title">Happy Stranger Things Day!</h1>
+<p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem in iste maxime nam nobis quod sequi temporibus? Deleniti exercitationem labore laborum molestiae numquam porro recusandae voluptates, voluptatibus. Ex, numquam optio!</p>
+
+<!-- Preferable to put JavaScript at the end to render HTML if script breaks -->
+<!-- External (Recommended) -->
+<script src=""></script>
+
+<!-- Internal -->
+<script>
+    // This is a JavaScript comment as a note for developers
+
+    /*
+        This
+        is
+        a
+        multi
+        line
+        comment
+    */
+
+    // Outputs text and supports different types of string closure
+    console.log('Friends')
+    console.log("don't")
+    console.log(`Lie!`)
+
+    // Creates a generic window alert in web
+    window.alert('Leave your lying boyfriends at home and...')
+    window.alert('Have a happy Stranger Things day!')
+
+    // Change text of web content through ID
+    document.getElementById('title').textContent = 'Upside Down';
+    document.getElementById('paragraph').textContent = 'It is time...';
+</script>
+</body>
+</html>
