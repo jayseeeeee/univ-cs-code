@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+<label for="number">Guess the number between <h3 id="range">1 — 5</h3></label> <br>
+<input type="number" name="" id="number">
+<button type="submit" id="enter">Enter</button>
+<h1 id="guess"></h1>
+<h2 id="highlight">guess remaining!</h2>
+<h2 id="status"></h2>
+</body>
+<script>
+    let number = document.getElementById('number')
+    let guess = document.getElementById('guess')
+    let status = document.getElementById('status')
+    let enter = document.getElementById('enter')
+
+    let rng = Math.trunc(Math.random() * (5 - 1) + 1)
+    console.log(rng);
+    let numberOfGuess = 3;
+    let isWin = false;
+    guess.textContent = String(numberOfGuess);
+    enter.onclick = function () {
+        if (!isWin && !(number.value === "")) {
+            if (numberOfGuess > 0) {
+                numberOfGuess--;
+                guess.textContent = String(numberOfGuess);
+                if (Number(number.value) === rng) {
+                    status.textContent = 'Congratulations! You win!';
+                } else if (numberOfGuess === 0) {
+                    status.textContent = `Unfortunately, ${number.value} is incorrect. You have lost!`;
+                } else {
+                    status.textContent = `Sorry, ${number.value} is incorrect.`;
+                }
+            } else {
+                status.textContent = `Unfortunately, you have 0 guess remaining.`;
+            }
+        }
+    }
+</script>
+</html>
