@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String Methods</title>
+</head>
+<body>
+
+</body>
+<script>
+    // String methods allow manipulation of text
+    let string = " Eleven ";
+    console.log(`First character of string is`, string.charAt(0)); // Count starts at 0
+    console.log(`Index of first 'e' is`, string.indexOf('e')); // Capitalization matters
+    console.log(`Index of last 'e' is`, string.lastIndexOf('e'));
+    console.log(`Length of string is`, string.length);
+    console.log(`Removed whitespace from string is`, string.trim())
+    console.log(`Uppercase of string is`, string.toUpperCase());
+    console.log(`Lowercase of string is`, string.toLowerCase());
+    console.log(`String repeated 5 times is`, string.repeat(5));
+    console.log(`Does string start with 'E'?`, string.startsWith("E"));
+    console.log(`Does string end with space?`, string.endsWith(""));
+    console.log(`Does string include 'a'?`, string.includes("v"));
+    console.log(`Replaced character from string is`, string.replaceAll("even", " "));
+    console.log(`Padded start of string with 🧇 until string length 10 is`, string.padStart(10, `🧇`));
+    console.log(`Padded end of string with 🧇 until string length 14 is`, string.padEnd(14, `🧇`));
+    console.log(`Sliced result of string is`, string.slice(1, 3)); // Negative number starts at end
+    // Method Chaining is a continuous call of method in one line such as string.
+    console.log(`Mike's final last words to Jane is "${string.trim().slice(0, 2).padEnd(4, "! ").repeat(5).trim()}"`); 
+</script>
+</html>
