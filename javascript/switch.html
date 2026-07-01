@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Switch is an efficient replacement for many if-else statements
+
+    let role = "Paladin";
+    let age = 14;
+
+    switch (role) {
+        case "Paladin":
+            console.log("Your name is Mike.")
+            break; // Break is required to exit out of switch statement
+        case "Sorcerer":
+            console.log("Your name is Will.")
+            break;
+        case "Bard":
+            console.log("Your name is Dustin.")
+            break;
+        case "Mage":
+            console.log("Your name is Eleven.")
+            break;
+        case "Ranger":
+            console.log("Your name is Lucas.")
+            break;
+        case "Zoomer":
+            console.log("Your name is Max.")
+            break;
+        default:
+            console.log("Sorry, that is not a valid role.");
+    }
+
+    switch (true) {
+        case age >= 18:
+            console.log("Sorry, you are too old.");
+            break;
+        case age < 12:
+            console.log("Sorry, you are too young.");
+            break;
+        default:
+            console.log("Welcome stranger! You are eligible for the party!");
+    }
+</script>
+</html>
