@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables</title>
+</head>
+<body>
+<h2 id="name"></h2>
+<script>
+    // Variable is a container that stores value
+
+    // Declaration
+    let name;
+    let nickname;
+    let birthPlace;
+    let subject = 11;
+    let height = 1.62;
+    let isAlive = false;
+
+    // Assignment
+    name = 'Jane Ives';
+    nickname = "El";
+    birthPlace = `Hawkins, Indiana`;
+    isAlive = true;
+
+    // Different string concatenation
+    console.log('My name is: ', name); // Comma automatically adds space
+    console.log(`My subject number is ${subject}`); // String formatting
+    console.log(`You can call me ` + nickname) // No space
+
+    // Display data type
+    console.log(typeof birthPlace, typeof isAlive);
+    document.getElementById('name').innerText = name;
+</script>
+</body>
+</html>
