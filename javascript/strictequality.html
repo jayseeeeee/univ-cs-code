@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strict Equality</title>
+</head>
+<body>
+
+</body>
+<script>
+    // '=' is an assignment operator.
+    const PI = 3.14;
+
+    // '==' is a comparison operator (compare if values are equal).
+    if (PI == "3.14") {
+        console.log("That is the value of PI.")
+    } else {
+        console.log("Something went wrong.");
+    }
+
+    // '===' is a strict equality operator (compare if values & datatype are equal).
+    if (PI === "3.14") {
+        console.log("That is the value of PI.")
+    } else {
+        console.log("Something went wrong.");
+    }
+
+    // '!=' is an inequality operator.
+    if (PI != "3.14") {
+        console.log("Something went wrong.");
+    } else {
+        console.log("That is the value of PI.")
+    }
+
+    // '!==' is a strict inequality operator
+    if (PI !== "3.14") {
+        console.log("Something went wrong.");
+    } else {
+        console.log("That is the value of PI.")
+    }
+</script>
+</html>
