@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Type Conversion</title>
+</head>
+<body>
+<label for="input">Enter your current age:</label>
+<input type="text" name="" id="input">
+<button id="submit">Submit</button>
+<h1 id="age"> </h1>
+<script>
+    // Type conversion changes a value from one data type to another
+
+    let string = "Stranger Things";
+    let number = "1983";
+    let boolean = "True";
+
+    // Converts any value to a string
+    // undefined → "undefined", null → "null"
+    string = String(string);
+
+    // Converts values to numbers
+    // Numeric strings → numbers
+    // "" and [] → 0
+    // true → 1, false → 0
+    // Non-numeric strings, undefined, and most objects → NaN
+    number = Number(number);
+
+    // Converts values to true or false
+    // 0, "", null, undefined, and NaN → false
+    // Non-empty strings, non-zero numbers, objects, and arrays → true
+    boolean = Boolean(boolean);
+
+    console.log(string, typeof string);
+    console.log(number, typeof number);
+    console.log(boolean, typeof boolean);
+
+    // Practical Example
+    document.getElementById('submit').onclick = function() {
+        let birthYear = 1983 - Number(document.getElementById('input').value); // Convert string input to a number
+        document.getElementById('age').textContent = `You would have been born in ${birthYear} when Will Byers was taken!`;
+    };
+</script>
+</body>
+</html>
