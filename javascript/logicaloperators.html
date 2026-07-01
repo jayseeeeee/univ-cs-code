@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logical Operators</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Logical Operators are used to combine or manipulate boolean false (true or false)
+    let age = 14;
+    let gender = 'Female'
+    let hasPowers = true
+    
+    // AND (&&)
+    if (age >= 12 && age < 18) {
+        console.log(`Welcome to the party, stranger!`);
+    } else {
+        console.log(`Sorry, you do not meet the age requirements to join.`);
+    }
+    
+    // OR (||)
+    if (gender == 'Male' || hasPowers) {
+        console.log(`You are cool, welcome to the party!`);
+    } else {
+        console.log(`Sorry, we do not accept different species (unless you're cool).`);
+    }
+     
+    // NOT (!)
+    if (!hasPowers) {
+        console.log(`You are not from Hawkins Lab.`);
+    } else {
+        console.log(`You came from Hawkins Lab!`);
+    }
+</script>
+</html>
