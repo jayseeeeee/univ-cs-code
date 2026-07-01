@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ternary Operator</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Ternary Operators is a shortcut to if-else statements to assign variables based on condition.
+    let age = 21;
+
+    // (Condition) ? Run this code if true : Run this code if false
+    let ternaryStatement = (age >= 18) ? "You're an adult" : "You're a minor";
+
+
+    let ifStatement;
+    if (age >= 18) {
+        ifStatement = "You're an adult";
+    } else {
+        ifStatement = "You're a minor"
+    }
+
+    console.log(ternaryStatement);
+    console.log(ifStatement);
+
+    let time = 16;
+    let greeting = time < 12 ? "Good morning" : "Good afternoon";
+    console.log(greeting);
+
+    let isStudent = true;
+    let message = isStudent ? "You are a student" : "You are not a student";
+    console.log(message);
+
+    let purchaseAmount = 125;
+    let discount = purchaseAmount >= 100 ? 10 : 0;
+    console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
+</script>
+</html>
